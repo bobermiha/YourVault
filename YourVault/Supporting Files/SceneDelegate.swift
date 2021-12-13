@@ -14,6 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let navigationController = window?.rootViewController as! UINavigationController
+        let libraryControlelr = navigationController.viewControllers[0] as! LibraryViewController
+        libraryControlelr.context = context
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

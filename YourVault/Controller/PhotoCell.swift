@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PhotoCell: UICollectionViewCell {
+class LibraryCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
 }

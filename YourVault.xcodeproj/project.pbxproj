@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A92BCD7B845F0485E7288B0 /* Pods_YourVault.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77055862FBA283B1155F9D65 /* Pods_YourVault.framework */; };
+		F5169F8727649567008A1920 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5169F8627649567008A1920 /* FullScreenViewController.swift */; };
+		F5169F8927649AEF008A1920 /* FullScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5169F8827649AEF008A1920 /* FullScreenCell.swift */; };
 		F51ACE6A275FA2F0005E5C9C /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51ACE69275FA2F0005E5C9C /* PhotoCell.swift */; };
 		F59EC6DB275E7DD200E9DE22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59EC6DA275E7DD200E9DE22 /* AppDelegate.swift */; };
 		F59EC6DD275E7DD200E9DE22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59EC6DC275E7DD200E9DE22 /* SceneDelegate.swift */; };
@@ -15,12 +17,14 @@
 		F59EC6E5275E7DD200E9DE22 /* YourVault.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F59EC6E3275E7DD200E9DE22 /* YourVault.xcdatamodeld */; };
 		F59EC6E7275E7DD400E9DE22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59EC6E6275E7DD400E9DE22 /* Assets.xcassets */; };
 		F59EC6EA275E7DD400E9DE22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59EC6E8275E7DD400E9DE22 /* LaunchScreen.storyboard */; };
-		F59EC6F7275E7F7300E9DE22 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59EC6F6275E7F7300E9DE22 /* PhotoCollectionViewController.swift */; };
+		F59EC6F7275E7F7300E9DE22 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59EC6F6275E7F7300E9DE22 /* LibraryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DDFEA3245CA3E52658FC0D3 /* Pods-YourVault.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourVault.release.xcconfig"; path = "Target Support Files/Pods-YourVault/Pods-YourVault.release.xcconfig"; sourceTree = "<group>"; };
 		77055862FBA283B1155F9D65 /* Pods_YourVault.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourVault.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5169F8627649567008A1920 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
+		F5169F8827649AEF008A1920 /* FullScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCell.swift; sourceTree = "<group>"; };
 		F51ACE69275FA2F0005E5C9C /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		F59EC6D7275E7DD200E9DE22 /* YourVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59EC6DA275E7DD200E9DE22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +34,7 @@
 		F59EC6E6275E7DD400E9DE22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F59EC6E9275E7DD400E9DE22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F59EC6EB275E7DD400E9DE22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F59EC6F6275E7F7300E9DE22 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		F59EC6F6275E7F7300E9DE22 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		FA30EB57D5E4CB9B1AF51747 /* Pods-YourVault.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourVault.debug.xcconfig"; path = "Target Support Files/Pods-YourVault/Pods-YourVault.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,8 +88,8 @@
 		F59EC6D9275E7DD200E9DE22 /* YourVault */ = {
 			isa = PBXGroup;
 			children = (
-				F59EC6F5275E7EDC00E9DE22 /* Core Data */,
 				F59EC6F4275E7EBB00E9DE22 /* Supporting Files */,
+				F59EC6F5275E7EDC00E9DE22 /* Model(CoreData) */,
 				F59EC6F2275E7EA300E9DE22 /* View */,
 				F59EC6F1275E7E9600E9DE22 /* Controller */,
 			);
@@ -95,8 +99,10 @@
 		F59EC6F1275E7E9600E9DE22 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F59EC6F6275E7F7300E9DE22 /* PhotoCollectionViewController.swift */,
+				F59EC6F6275E7F7300E9DE22 /* LibraryViewController.swift */,
 				F51ACE69275FA2F0005E5C9C /* PhotoCell.swift */,
+				F5169F8627649567008A1920 /* FullScreenViewController.swift */,
+				F5169F8827649AEF008A1920 /* FullScreenCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,12 +127,12 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F59EC6F5275E7EDC00E9DE22 /* Core Data */ = {
+		F59EC6F5275E7EDC00E9DE22 /* Model(CoreData) */ = {
 			isa = PBXGroup;
 			children = (
 				F59EC6E3275E7DD200E9DE22 /* YourVault.xcdatamodeld */,
 			);
-			path = "Core Data";
+			path = "Model(CoreData)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +254,9 @@
 				F51ACE6A275FA2F0005E5C9C /* PhotoCell.swift in Sources */,
 				F59EC6DB275E7DD200E9DE22 /* AppDelegate.swift in Sources */,
 				F59EC6DD275E7DD200E9DE22 /* SceneDelegate.swift in Sources */,
-				F59EC6F7275E7F7300E9DE22 /* PhotoCollectionViewController.swift in Sources */,
+				F59EC6F7275E7F7300E9DE22 /* LibraryViewController.swift in Sources */,
+				F5169F8727649567008A1920 /* FullScreenViewController.swift in Sources */,
+				F5169F8927649AEF008A1920 /* FullScreenCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
